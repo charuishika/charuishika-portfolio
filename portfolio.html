@@ -85,7 +85,7 @@ nav {
   transition: background 0.4s var(--transition);
 }
 [data-theme="light"] nav { background: rgba(240,240,250,0.7); }
-
+ 
 .nav-logo {
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
@@ -96,7 +96,7 @@ nav {
   background-clip: text;
   letter-spacing: -0.02em;
 }
-
+ 
 .nav-links {
   display: flex; gap: 2.5rem; align-items: center;
 }
@@ -108,9 +108,9 @@ nav {
   letter-spacing: 0.01em;
 }
 .nav-links a:hover { color: var(--violet-soft); }
-
+ 
 .nav-right { display: flex; align-items: center; gap: 1rem; }
-
+ 
 .theme-toggle {
   width: 40px; height: 40px;
   border-radius: 50%;
@@ -122,7 +122,7 @@ nav {
   color: var(--white);
 }
 .theme-toggle:hover { background: var(--violet-glow); border-color: var(--border-light); }
-
+ 
 .nav-cta {
   padding: 0.5rem 1.25rem;
   background: linear-gradient(135deg, var(--violet), #6D28D9);
@@ -134,7 +134,19 @@ nav {
   box-shadow: 0 4px 20px rgba(124,58,237,0.35);
 }
 .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(124,58,237,0.5); }
-
+ 
+.nav-resume {
+  display: flex; align-items: center; gap: 0.45rem;
+  padding: 0.5rem 1.1rem;
+  border: 1.5px solid var(--border-light);
+  border-radius: 99px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white-dim);
+  background: var(--white-faint);
+  transition: border-color 0.25s, background 0.25s, color 0.25s;
+}
+.nav-resume:hover { border-color: var(--violet-soft); background: var(--violet-glow); color: var(--white); }
 /* ===== HERO ===== */
 #hero {
   position: relative; z-index: 1;
@@ -938,7 +950,11 @@ footer strong { color: var(--violet-soft); }
   </ul>
   <div class="nav-right">
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
-    <a href="mailto:charusuresh06@gmail.com" class="nav-cta nav-links">Hire Me →</a>
+    <a href="Charuishika_Resume.pdf" download class="nav-resume" title="Download Resume">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Resume
+    </a>
+    <a href="#contact" class="nav-cta nav-links">Let's Connect</a>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
