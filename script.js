@@ -1,3 +1,4 @@
+
 // ===== CANVAS PARTICLE GRID =====
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
@@ -91,19 +92,26 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
-// ===== TYPEWRITER HERO ROLE =====
-const roles = ['Software Engineer', 'Problem Solver'];
-let roleIdx = 0, charIdx = 0, typing = true;
-const heroRole = document.querySelector('.hero-role strong');
-if (heroRole) {
-  setInterval(() => {
-    const target = roles[roleIdx];
-    if (typing) {
-      heroRole.textContent = target.slice(0, ++charIdx);
-      if (charIdx >= target.length) { typing = false; setTimeout(() => {}, 1200); }
-    } else {
-      heroRole.textContent = target.slice(0, --charIdx);
-      if (charIdx === 0) { typing = true; roleIdx = (roleIdx + 1) % roles.length; }
-    }
-  }, 80);
-}
+// ===== CONTACT FORM → mailto =====
+document.getElementById('cf-submit').addEventListener('click', () => {
+  const name    = document.getElementById('cf-name').value.trim();
+  const email   = document.getElementById('cf-email').value.trim();
+  const subject = document.getElementById('cf-subject').value.trim();
+  const message = document.getElementById('cf-message').value.trim();
+
+  if (!name || !email || !message) {
+    // Shake the empty fields
+    ['cf-name','cf-email','cf-message'].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el.value.trim()) { el.style.borderColor = '#F87171'; setTimeout(() => el.style.borderColor = '', 1800); }
+    });
+    return;
+  }
+
+  const sub  = encodeURIComponent(subject || `Portfolio message from ${name}`);
+  const body = encodeURIComponent(`Hi Charuishika,\n\n${message}\n\n—${name}\n${email}`);
+  window.location.href = `mailto:charusuresh06@gmail.com?subject=${sub}&body=${body}`;
+
+  document.getElementById('cf-success').style.display = 'block';
+  setTimeout(() => document.getElementById('cf-success').style.display = 'none', 5000);
+});

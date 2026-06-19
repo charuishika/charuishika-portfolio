@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -15,7 +15,18 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">CS_</div>
+  <a href="#hero" class="nav-logo" aria-label="Charuishika S">
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="36" height="36" rx="10" fill="url(#logoGrad)"/>
+      <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="800" font-size="15" fill="white" letter-spacing="-0.5">CS</text>
+      <defs>
+        <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#7C3AED"/>
+          <stop offset="100%" stop-color="#4F46E5"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -46,15 +57,19 @@
   <h1 class="hero-name">
     <span class="hero-name-gradient">Charuishika S</span><span class="hero-cursor"></span>
   </h1>
-  <p class="hero-role">
-    <strong>Software Engineer</strong> &amp; <strong>Full Stack Developer</strong> &amp; <strong>AI Enthusiast</strong>
-  </p>
+  <div class="hero-roles">
+    <span class="hero-role-item">CSE Student</span>
+    <span class="hero-role-sep"></span>
+    <span class="hero-role-item">Full Stack Developer</span>
+    <span class="hero-role-sep"></span>
+    <span class="hero-role-item">AI Enthusiast</span>
+  </div>
   <p class="hero-desc">
     Building intelligent, scalable, production-grade applications — from AI-powered finance platforms to full-stack systems. Currently pursuing B.Tech CSE at SASTRA, CGPA 8.51.
   </p>
   <div class="hero-ctas">
     <a href="#projects" class="btn-primary">View Projects ↓</a>
-    <a href="#contact" class="btn-secondary">Get in Touch</a>
+    <a href="Charuishika_Resume.pdf" download class="btn-secondary">Download Resume</a>
   </div>
   <div class="hero-socials">
     <a href="https://github.com/charuishika" class="social-link" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
@@ -87,7 +102,7 @@
           My work spans from AI-powered MERN applications with Groq LLM integration to production-deployed systems with JWT auth, real-time analytics, and PWA support — code that ships, scales, and solves real problems.
         </p>
         <p>
-          Outside coursework, I've competed at hackathons, earned NPTEL certifications, and interned in real-world software development — constantly pushing toward engineering that's both technically rigorous and deeply human.
+          Outside coursework, I've competed at national-level hackathons, earned NPTEL certifications, and interned in real-world software development — constantly pushing toward engineering that's both technically rigorous and deeply human.
         </p>
       </div>
       <div class="stat-grid reveal reveal-delay-2">
@@ -96,7 +111,7 @@
           <div class="stat-label">CGPA / 10.0</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">2+</div>
+          <div class="stat-num">Multiple</div>
           <div class="stat-label">Production Projects</div>
         </div>
         <div class="stat-card">
@@ -104,7 +119,7 @@
           <div class="stat-label">NIT Hackathon</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">58+</div>
+          <div class="stat-num">100+</div>
           <div class="stat-label">LeetCode Solved</div>
         </div>
       </div>
@@ -120,86 +135,76 @@
     <div class="section-label">Technical Expertise</div>
     <h2 class="section-title">Built on a strong<br>engineering foundation.</h2>
     <p class="section-subtitle">Proficient across the full development stack — from systems-level C++ to cloud-deployed React applications.</p>
-    <div class="skills-grid">
-      <div class="skill-category reveal">
-        <div class="skill-cat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 13 9 20 9"/><path d="M20 14.5V7l-7-5H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="m16 19 2 2 4-4"/></svg>
-        </div>
-        <div class="skill-cat-name">Languages</div>
-        <div class="skill-tags">
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">C</span>
-          <span class="skill-tag">C++</span>
-        </div>
-      </div>
-      <div class="skill-category reveal reveal-delay-1">
-        <div class="skill-cat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
-        <div class="skill-cat-name">Frontend</div>
-        <div class="skill-tags">
-          <span class="skill-tag">React.js</span>
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">Recharts</span>
-          <span class="skill-tag">PWA</span>
+ 
+    <div class="skills-rows">
+ 
+      <div class="skills-row reveal">
+        <div class="skills-row-label">Languages</div>
+        <div class="skills-tag-group">
+          <span class="skill-tag-item cat-lang"><span class="skill-tag-dot"></span>Python</span>
+          <span class="skill-tag-item cat-lang"><span class="skill-tag-dot"></span>JavaScript</span>
+          <span class="skill-tag-item cat-lang"><span class="skill-tag-dot"></span>Java</span>
+          <span class="skill-tag-item cat-lang"><span class="skill-tag-dot"></span>C</span>
+          <span class="skill-tag-item cat-lang"><span class="skill-tag-dot"></span>C++</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-2">
-        <div class="skill-cat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-        </div>
-        <div class="skill-cat-name">Backend</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Express.js</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">JWT Auth</span>
-          <span class="skill-tag">Handlebars</span>
+ 
+      <div class="skills-row reveal reveal-delay-1">
+        <div class="skills-row-label">Frontend</div>
+        <div class="skills-tag-group">
+          <span class="skill-tag-item cat-frontend"><span class="skill-tag-dot"></span>React.js</span>
+          <span class="skill-tag-item cat-frontend"><span class="skill-tag-dot"></span>HTML5</span>
+          <span class="skill-tag-item cat-frontend"><span class="skill-tag-dot"></span>CSS3</span>
+          <span class="skill-tag-item cat-frontend"><span class="skill-tag-dot"></span>Recharts</span>
+          <span class="skill-tag-item cat-frontend"><span class="skill-tag-dot"></span>PWA</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-3">
-        <div class="skill-cat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-        </div>
-        <div class="skill-cat-name">Databases</div>
-        <div class="skill-tags">
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">MySQL</span>
-        </div>
-      </div>
-      <div class="skill-category reveal reveal-delay-1">
-        <div class="skill-cat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-        </div>
-        <div class="skill-cat-name">Tools &amp; Platforms</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">VS Code</span>
-          <span class="skill-tag">Postman</span>
-          <span class="skill-tag">Vercel</span>
-          <span class="skill-tag">Render</span>
+ 
+      <div class="skills-row reveal reveal-delay-1">
+        <div class="skills-row-label">Backend</div>
+        <div class="skills-tag-group">
+          <span class="skill-tag-item cat-backend"><span class="skill-tag-dot"></span>Node.js</span>
+          <span class="skill-tag-item cat-backend"><span class="skill-tag-dot"></span>Express.js</span>
+          <span class="skill-tag-item cat-backend"><span class="skill-tag-dot"></span>REST APIs</span>
+          <span class="skill-tag-item cat-backend"><span class="skill-tag-dot"></span>JWT Auth</span>
+          <span class="skill-tag-item cat-backend"><span class="skill-tag-dot"></span>Handlebars</span>
         </div>
       </div>
-      <div class="skill-category reveal reveal-delay-2">
-        <div class="skill-cat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 1 0 0 16A8 8 0 0 0 12 2z"/><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="1"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
-        </div>
-        <div class="skill-cat-name">AI &amp; ML</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Groq AI</span>
-          <span class="skill-tag">Llama 3.3 70B</span>
-          <span class="skill-tag">AI Integration</span>
-          <span class="skill-tag">Data Analytics</span>
+ 
+      <div class="skills-row reveal reveal-delay-2">
+        <div class="skills-row-label">Databases</div>
+        <div class="skills-tag-group">
+          <span class="skill-tag-item cat-db"><span class="skill-tag-dot"></span>MongoDB</span>
+          <span class="skill-tag-item cat-db"><span class="skill-tag-dot"></span>MySQL</span>
         </div>
       </div>
-    </div>
+ 
+      <div class="skills-row reveal reveal-delay-2">
+        <div class="skills-row-label">Tools</div>
+        <div class="skills-tag-group">
+          <span class="skill-tag-item cat-tools"><span class="skill-tag-dot"></span>Git</span>
+          <span class="skill-tag-item cat-tools"><span class="skill-tag-dot"></span>GitHub</span>
+          <span class="skill-tag-item cat-tools"><span class="skill-tag-dot"></span>VS Code</span>
+          <span class="skill-tag-item cat-tools"><span class="skill-tag-dot"></span>Postman</span>
+          <span class="skill-tag-item cat-tools"><span class="skill-tag-dot"></span>Vercel</span>
+          <span class="skill-tag-item cat-tools"><span class="skill-tag-dot"></span>Render</span>
+        </div>
+      </div>
+ 
+      <div class="skills-row reveal reveal-delay-3">
+        <div class="skills-row-label">AI &amp; ML</div>
+        <div class="skills-tag-group">
+          <span class="skill-tag-item cat-ai"><span class="skill-tag-dot"></span>Groq AI</span>
+          <span class="skill-tag-item cat-ai"><span class="skill-tag-dot"></span>Llama 3.3 70B</span>
+          <span class="skill-tag-item cat-ai"><span class="skill-tag-dot"></span>AI Integration</span>
+          <span class="skill-tag-item cat-ai"><span class="skill-tag-dot"></span>Data Analytics</span>
+        </div>
+      </div>
+ 
+    </div><!-- end skills-rows -->
   </div>
 </section>
-
+ 
 <div class="divider"></div>
 
 <!-- PROJECTS -->
@@ -244,10 +249,16 @@
           <span class="stack-tag">Render</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/charuishika" class="proj-link" target="_blank">↗ GitHub</a>
+          <a href="https://github.com/charuishika/FinTrack-Pro.git" class="proj-link" target="_blank">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://fin-track-pro-three.vercel.app" class="proj-link proj-link--demo" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+            Live Demo
+          </a>
         </div>
       </div>
-
       <!-- Complaint Management System -->
       <div class="project-card reveal reveal-delay-1">
         <div class="project-header">
@@ -272,7 +283,10 @@
           <span class="stack-tag">REST APIs</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/charuishika" class="proj-link" target="_blank">↗ GitHub</a>
+          <a href="https://github.com/charuishika" class="proj-link" target="_blank">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
         </div>
       </div>
 
@@ -294,7 +308,7 @@
         <div class="exp-line"></div>
       </div>
       <div>
-        <div class="exp-company">TAFF Inc.</div>
+        <div class="exp-company">TAF Inc.</div>
         <div class="exp-title">Software Development Intern</div>
         <div class="exp-period">Internship · Software Development Domain</div>
         <div class="exp-points">
@@ -368,10 +382,6 @@
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               CGPA: 8.51 / 10.0
             </span>
-            <span class="edu-meta-pill">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              Reg. 127003046
-            </span>
           </div>
         </div>
       </div>
@@ -432,7 +442,7 @@
         <div class="leetcode-desc">Consistent problem-solving practice across Data Structures &amp; Algorithms</div>
       </div>
       <div class="leetcode-stat">
-        <div class="leetcode-count">58+</div>
+        <div class="leetcode-count">100+</div>
         <div class="leetcode-sub">Problems Solved</div>
       </div>
     </div>
@@ -445,28 +455,84 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
-    <div class="section-label" style="justify-content:center">Let's Connect</div>
-    <h2 class="contact-title reveal">Ready to build<br><span>something great?</span></h2>
-    <p class="contact-desc reveal reveal-delay-1">
-      I'm actively looking for internships and full-time opportunities with engineering teams who care deeply about craft. Whether it's a quick question or a collaboration — my inbox is always open.
-    </p>
-    <a href="mailto:charusuresh06@gmail.com" class="contact-email reveal reveal-delay-2">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      charusuresh06@gmail.com
-    </a>
-    <div class="contact-socials reveal reveal-delay-3">
-      <a href="https://github.com/charuishika" class="contact-social" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub
-      </a>
-      <a href="https://linkedin.com/in/charuishika-s" class="contact-social" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        LinkedIn
-      </a>
-      <a href="mailto:127003046@sastra.ac.in" class="contact-social">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        SASTRA Mail
-      </a>
+    <div class="section-label">Let's Connect</div>
+    <h2 class="section-title reveal">Open to great<br>conversations &amp; opportunities.</h2>
+
+    <div class="contact-grid">
+
+      <!-- Left: info -->
+      <div class="contact-left reveal">
+        <p class="contact-desc">
+          I'm actively looking for internships and full-time roles with engineering teams who care about craft and impact. Whether it's a collaboration, opportunity, or just a hello — I'd love to hear from you.
+        </p>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="contact-info-text">
+              <a href="mailto:charusuresh06@gmail.com">charusuresh06@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="contact-info-text">
+              <a href="mailto:127003046@sastra.ac.in">127003046@sastra.ac.in</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-info-text">Tiruchirappalli, Tamil Nadu, India</div>
+          </div>
+        </div>
+        <div class="contact-socials-row">
+          <a href="https://github.com/charuishika" class="contact-social" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/charuishika-s" class="contact-social" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: message form -->
+      <div class="contact-form-wrap reveal reveal-delay-2">
+        <h3>Send a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="cf-name">Name</label>
+            <input class="form-input" id="cf-name" type="text" placeholder="Your name" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-email">Email</label>
+            <input class="form-input" id="cf-email" type="email" placeholder="your@email.com" autocomplete="email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-subject">Subject</label>
+          <input class="form-input" id="cf-subject" type="text" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-message">Message</label>
+          <textarea class="form-textarea" id="cf-message" placeholder="Tell me about the opportunity, project, or just say hello..."></textarea>
+        </div>
+        <button class="form-submit" id="cf-submit">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Send Message
+        </button>
+        <p class="form-note">Opens your mail client · No data stored</p>
+        <div class="form-success" id="cf-success">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 0.5rem;display:block"><polyline points="20 6 9 17 4 12"/></svg>
+          Mail client opened! Looking forward to connecting.
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
