@@ -29,29 +29,6 @@ This portfolio highlights my journey as a Full Stack Developer and AI Enthusiast
 * JavaScript
 * Responsive Web Design
 
-## Projects Featured
-
-### FinTrack Pro
-
-AI-powered personal finance platform with analytics, budgeting, authentication, and cloud deployment.
-
-### Complaint Management System
-
-Full-stack web application for managing and tracking student complaints with role-based access control.
-
-## Achievements
-
-* Top 3 Winner – National Level NIT Hackathon
-* NPTEL Certification – Artificial Intelligence
-* NPTEL Certification – Data Analytics with Python
-* 100+ LeetCode Problems Solved
-
-## Education
-
-**B.Tech Computer Science and Engineering**
-SASTRA Deemed University (2023 – 2027)
-CGPA: 8.51 / 10.0
-
 ## Author
 
 **Charuishika S**
